@@ -1,0 +1,8 @@
+# Runtime game file storage. Keep actual builds on server storage, not in git.
+game-files/*
+!game-files/.gitkeep
+
+# Dependencies and local environment
+node_modules/
+.env
+.DS_Store

@@ -1,0 +1,20 @@
+{
+  "name": "phonexos-development-hub",
+  "version": "1.0.0",
+  "description": "Server-side PhonexOS development hub and GitHub Pages-ready frontend for publishing project details and downloadable files.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --check server.js"
+  },
+  "keywords": [
+    "phonexos",
+    "development-hub",
+    "file-server",
+    "github-pages"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

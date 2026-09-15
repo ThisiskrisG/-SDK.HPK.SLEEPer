@@ -1,0 +1,59 @@
+name: PR action request
+description: Turn an idea, bug, or website change into a trackable issue that asks for a pull request.
+title: "[PR Action]: "
+labels:
+  - needs-pr
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when you want an issue created that clearly asks someone to open a pull request.
+        Keep the request specific so the PR can be reviewed and merged quickly.
+  - type: textarea
+    id: goal
+    attributes:
+      label: What should change?
+      description: Describe the website, server, advertising, release, or documentation change you want.
+      placeholder: Add an advertisement preview section that includes copyable social post text.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this needed?
+      description: Explain the business or player benefit.
+      placeholder: This helps me promote Cop Retro Shooter and sell ad placements from one website.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List what must be true before the pull request is done.
+      placeholder: |
+        - The website includes the new section.
+        - The section works on mobile and desktop.
+        - README explains how to use it.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area of work
+      options:
+        - Website frontend
+        - Server API
+        - Advertising / promotion
+        - GitHub release workflow
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: request_pr
+    attributes:
+      label: Pull request request
+      options:
+        - label: I am requesting that this issue be handled by a pull request.
+          required: true

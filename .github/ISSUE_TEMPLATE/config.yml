@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Cop Retro Shooter setup notes
+    url: https://github.com/
+    about: Use the repository README first, then open a PR action request if the work needs code changes.
